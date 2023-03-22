@@ -1,0 +1,8 @@
+// 客製化bootstrap語法
+// 與變數相關的函式
+@import "bootstrap/scss/functions";
+// 變數
+@import "./variables";
+
+// 載入bootstrap。scss環境裡可以省略.scss
+@import "bootstrap/scss/bootstrap.scss";
