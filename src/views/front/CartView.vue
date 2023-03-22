@@ -235,7 +235,7 @@ export default {
       const order = this.form
 
       // 寫法1：購物車沒有產品時，阻擋表單送出
-      if (this.cart.length === undefined) {
+      if (this.cart.carts.length === 0) {
         alert('購物車請加入商品後執行')
       } else {
         this.$http.post(`${VITE_APP_URL}api/${VITE_APP_PATH}/order`, { data: order })
