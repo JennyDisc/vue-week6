@@ -1,5 +1,9 @@
 <template>
   這是購物車頁面
+  <div class="text-end">
+    <!-- :disabled="loadingItem === 'delete'"，點擊一次"清空購物車"後就不能再按，避免API回應因購物車內無商品而出現錯誤 -->
+    <button class="btn btn-outline-danger" type="button" :disabled="loadingItem === 'delete'" @click="deleteCarts">清空購物車</button>
+  </div>
   <table class="table align-middle">
     <thead>
       <tr>
